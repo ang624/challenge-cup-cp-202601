@@ -1,0 +1,368 @@
+{
+  "asset_id": "YN_OSM_ROADS_20260807_V1",
+  "generated_at_utc": "2026-08-07T07:56:04+00:00",
+  "boundary_file": "yunnan_boundary.geojson",
+  "boundary_sha256": "ac6c4f36b92e70ba294fe3267435ef1d1914a5695a2ad4c476ff4d5bfa145bd7",
+  "source_archive_url": "https://build.protomaps.com/20260806.pmtiles",
+  "source_archive_name": "Protomaps Basemap",
+  "source_archive_version": "4.15.1",
+  "source_osm_timestamp": "2026-08-06T04:00:00Z",
+  "source_attribution": "<a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap</a>",
+  "source_description": "Basemap layers derived from OpenStreetMap and Natural Earth",
+  "extraction_method": "PMTiles HTTP Range requests; Protomaps roads layer; local clipping",
+  "zoom": 8,
+  "tile_range": {
+    "x_min": 197,
+    "x_max": 203,
+    "y_min": 106,
+    "y_max": 112
+  },
+  "downloaded_tile_count": 49,
+  "raw_file": "yunnan_osm_roads_raw_z8_tiles.json.gz",
+  "raw_sha256": "c6a245c26996cecafc64c0b0ff73639bb55e2bc8d6abfd2aadef935a91468de2",
+  "published_file": "yunnan_osm_roads.geojson",
+  "published_sha256": "48fcc59ea72a9ab94bb0ff21302132bc4ebf6c3cb4c480b26676ae9231350e1b",
+  "feature_count": 11666,
+  "feature_count_by_class": {
+    "motorway": 8336,
+    "trunk": 3330
+  },
+  "source_feature_count_by_detail": {
+    "trunk": 1006,
+    "motorway": 515,
+    "motorway_link": 39,
+    "trunk_link": 34
+  },
+  "simplification_crs": "EPSG:3857",
+  "simplification_tolerance_m": 220.0,
+  "classification": {
+    "motorway,motorway_link": "高速主廊道",
+    "trunk,trunk_link": "区域干线"
+  },
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "source_url": "https://www.openstreetmap.org/copyright",
+  "protomaps_docs": "https://docs.protomaps.com/basemaps/downloads",
+  "range_request_count": 53,
+  "range_requests": [
+    {
+      "offset": 0,
+      "length": 127,
+      "content_range": "bytes 0-126/137205571996",
+      "sha256": "bc913818cdf4cabeb8ea39595621a3b08043887aa16932cafd70ad89363b3ca8"
+    },
+    {
+      "offset": 136854729837,
+      "length": 1180,
+      "content_range": "bytes 136854729837-136854731016/137205571996",
+      "sha256": "9d7aa7e4adaa67e4b268d8787ad4113221e61d9835609b81f8ae8b7340d35f8b"
+    },
+    {
+      "offset": 127,
+      "length": 15561,
+      "content_range": "bytes 127-15687/137205571996",
+      "sha256": "26a73d407639fecab250bab11dead39c1024fa0005e4d8132639698f4430fc1b"
+    },
+    {
+      "offset": 136854731017,
+      "length": 131628,
+      "content_range": "bytes 136854731017-136854862644/137205571996",
+      "sha256": "95404a2771dc152a8a504631574ae7b0dda09f2e7f0ae730206d324e9ea39273"
+    },
+    {
+      "offset": 358631092,
+      "length": 18221,
+      "content_range": "bytes 358631092-358649312/137205571996",
+      "sha256": "abbfb216e094829a109766135a6dfb2839622ba841c2a04edef6d1ffa057064f"
+    },
+    {
+      "offset": 358509533,
+      "length": 15056,
+      "content_range": "bytes 358509533-358524588/137205571996",
+      "sha256": "eaa81bca826b8bf9cd5dd09f78892de01e817e901035861b990069333d71f50f"
+    },
+    {
+      "offset": 358493036,
+      "length": 16497,
+      "content_range": "bytes 358493036-358509532/137205571996",
+      "sha256": "5af119902bfacdda46f7901843f833ba6c72ef1f24eb00dfcb4269271b732c2d"
+    },
+    {
+      "offset": 359499380,
+      "length": 31893,
+      "content_range": "bytes 359499380-359531272/137205571996",
+      "sha256": "bded5bcd74b31f9357f0126ee6b250d223d2aa285d46f0fbf6f58d5a0fafc91c"
+    },
+    {
+      "offset": 359444157,
+      "length": 55223,
+      "content_range": "bytes 359444157-359499379/137205571996",
+      "sha256": "0aa19af6c1e7e6fa9cfd7ccd6cf28f84e329b7a26c9b87e233744f8f85e9b955"
+    },
+    {
+      "offset": 359201380,
+      "length": 54673,
+      "content_range": "bytes 359201380-359256052/137205571996",
+      "sha256": "6c1158943c8fd6b8874a440c4e24ca5af505a902789c9f350d77e005f5eeb1ee"
+    },
+    {
+      "offset": 359256053,
+      "length": 79421,
+      "content_range": "bytes 359256053-359335473/137205571996",
+      "sha256": "d0c928a93e98f7acaecc40aae19e321e1bfbadd644dc17609fc6237281a6c66e"
+    },
+    {
+      "offset": 358550803,
+      "length": 17670,
+      "content_range": "bytes 358550803-358568472/137205571996",
+      "sha256": "f2453037e5ef6ca30d31ab80689e09e913c88aafa18e8adce9134d0690a5e6aa"
+    },
+    {
+      "offset": 358524589,
+      "length": 26214,
+      "content_range": "bytes 358524589-358550802/137205571996",
+      "sha256": "c6c0b77e935c13fa8697fa3b887f944d7ec3b837b8e47454b121c7f5d92dd5e0"
+    },
+    {
+      "offset": 358425596,
+      "length": 67440,
+      "content_range": "bytes 358425596-358493035/137205571996",
+      "sha256": "3c8301a98103feb2717776c9b94cbf797e6771d9400ae02857fd0057958a5b91"
+    },
+    {
+      "offset": 359531273,
+      "length": 21503,
+      "content_range": "bytes 359531273-359552775/137205571996",
+      "sha256": "86854caf837362ef9b5f0161ba0b1fef613650a173cf08abdb9589a6673abee6"
+    },
+    {
+      "offset": 359415713,
+      "length": 28444,
+      "content_range": "bytes 359415713-359444156/137205571996",
+      "sha256": "a251bbfc15529520edb0d92478d6079c8d6872da06a5fbf04fdc71035b9ddc14"
+    },
+    {
+      "offset": 359376450,
+      "length": 39263,
+      "content_range": "bytes 359376450-359415712/137205571996",
+      "sha256": "cf58ea31fe1e096f62dd02ee68ea372eb8ef03ad1584a3fd3d1f6ba830ee41a9"
+    },
+    {
+      "offset": 359335474,
+      "length": 40976,
+      "content_range": "bytes 359335474-359376449/137205571996",
+      "sha256": "466bd7d1b2509512aef93c0157c8553ffcd05808654e5d791c1cbbd1a8b7b29c"
+    },
+    {
+      "offset": 358089825,
+      "length": 7744,
+      "content_range": "bytes 358089825-358097568/137205571996",
+      "sha256": "0e229e521cb7b3fe16285b966706dc905d5c69afb2ad888acacfc8737327f038"
+    },
+    {
+      "offset": 358365103,
+      "length": 15896,
+      "content_range": "bytes 358365103-358380998/137205571996",
+      "sha256": "f45f0da4c19fc3035739cc72520a882ffec1d1e4464d15f6d4d4b5ea5d951382"
+    },
+    {
+      "offset": 358380999,
+      "length": 44597,
+      "content_range": "bytes 358380999-358425595/137205571996",
+      "sha256": "d4843bd2abd1cbcbe89d0c39977cd4204db1ce04ca80c4b89da294627a3a70a2"
+    },
+    {
+      "offset": 359552776,
+      "length": 32070,
+      "content_range": "bytes 359552776-359584845/137205571996",
+      "sha256": "35f268a6c35c03e500c56d48fc7a60e5900e425e3aa7bd48e91b7ad7f1b07261"
+    },
+    {
+      "offset": 359584846,
+      "length": 24094,
+      "content_range": "bytes 359584846-359608939/137205571996",
+      "sha256": "839dafa4593f8b16c63f1f415e4359908629daa49a1fa7ecb4e16264ddc0273e"
+    },
+    {
+      "offset": 360055508,
+      "length": 30278,
+      "content_range": "bytes 360055508-360085785/137205571996",
+      "sha256": "83503faddb9c05b5cf60da27d74e6a8e3ee72f19841301a00b9c69ff40a7b0a3"
+    },
+    {
+      "offset": 360085786,
+      "length": 48286,
+      "content_range": "bytes 360085786-360134071/137205571996",
+      "sha256": "83791897120c2e5dede62554fdca11ac5f9013c5a9410eb5bd77c35036f3dae5"
+    },
+    {
+      "offset": 358097569,
+      "length": 13398,
+      "content_range": "bytes 358097569-358110966/137205571996",
+      "sha256": "11b76f361e769a8fde70dbd1f4a31f42099fcf571d115399b5d9be145a69f88b"
+    },
+    {
+      "offset": 358343121,
+      "length": 21982,
+      "content_range": "bytes 358343121-358365102/137205571996",
+      "sha256": "b12335479c9869585b978800a11cea4b0ac0c0932803856e85fc8726bd347f95"
+    },
+    {
+      "offset": 358281486,
+      "length": 61635,
+      "content_range": "bytes 358281486-358343120/137205571996",
+      "sha256": "afdea2a9f2d1c07330ba2b85f1ff12a1f5a2ac724feb4aaceb1c489497b56e8e"
+    },
+    {
+      "offset": 359660874,
+      "length": 39793,
+      "content_range": "bytes 359660874-359700666/137205571996",
+      "sha256": "d4029d54c936593a631f1fefa00e2837dd80bee73dc03d7f44ddc2bd89bb4e7a"
+    },
+    {
+      "offset": 359608940,
+      "length": 51934,
+      "content_range": "bytes 359608940-359660873/137205571996",
+      "sha256": "39f64d360379daf8407e361aef32b4ca225d4f0fb61a3aebae3ce11a2ad86ee9"
+    },
+    {
+      "offset": 360029366,
+      "length": 26142,
+      "content_range": "bytes 360029366-360055507/137205571996",
+      "sha256": "dc7a7bd2d4206d61789fbc6e91e770835a143fb422662b49429457d086dfca6c"
+    },
+    {
+      "offset": 360003976,
+      "length": 25390,
+      "content_range": "bytes 360003976-360029365/137205571996",
+      "sha256": "8ec19ce0c24c5488bc31f17651091b871de82492f4cb05c5886e75a54e2c6013"
+    },
+    {
+      "offset": 358167390,
+      "length": 20474,
+      "content_range": "bytes 358167390-358187863/137205571996",
+      "sha256": "9fb902664ae4647c4970606905e0c2a49eb2c36511ac06fbf4f3f4caf992752f"
+    },
+    {
+      "offset": 358187864,
+      "length": 25589,
+      "content_range": "bytes 358187864-358213452/137205571996",
+      "sha256": "8e75066c48850d233ee86600625604ad92e6f979988d32b161383ad4bba179fc"
+    },
+    {
+      "offset": 358253574,
+      "length": 27912,
+      "content_range": "bytes 358253574-358281485/137205571996",
+      "sha256": "f48fca65ae32b1a6258d0dfb323de4a6a2d6be26d74da3ab8560a609afec298d"
+    },
+    {
+      "offset": 359700667,
+      "length": 24902,
+      "content_range": "bytes 359700667-359725568/137205571996",
+      "sha256": "330102ca03b88efff30020220be72daf704dc12bc5d4650902cf0945e55fe794"
+    },
+    {
+      "offset": 359794013,
+      "length": 32330,
+      "content_range": "bytes 359794013-359826342/137205571996",
+      "sha256": "bea16e97a14f33ab269cfbe4084895c3154d3c7c46b2057f76f3f261ca6d1dd8"
+    },
+    {
+      "offset": 359826343,
+      "length": 19697,
+      "content_range": "bytes 359826343-359846039/137205571996",
+      "sha256": "7d1cbfade04bf63a5c98d924bd2106eceb2a8e512c003e8fec37a2b6a6de1459"
+    },
+    {
+      "offset": 359964566,
+      "length": 39410,
+      "content_range": "bytes 359964566-360003975/137205571996",
+      "sha256": "49fabd815cba542827c01842bd45260bd4995a4df660fc9db32a900ac48d5d5c"
+    },
+    {
+      "offset": 358156447,
+      "length": 10943,
+      "content_range": "bytes 358156447-358167389/137205571996",
+      "sha256": "df8a4cf0b3cb2d80f8a0e0990eb9e0b1d995787cc6f0d822973c1215312a16a5"
+    },
+    {
+      "offset": 358213453,
+      "length": 20292,
+      "content_range": "bytes 358213453-358233744/137205571996",
+      "sha256": "8e627e684093c001b518946af8fdb884c1a4705d632bf8cb99ff30872698da02"
+    },
+    {
+      "offset": 358233745,
+      "length": 19829,
+      "content_range": "bytes 358233745-358253573/137205571996",
+      "sha256": "fd33d5e09bdff3f4d3b54badd2d2cb9855c40d9c3a2bbcdeabd5f889e97cd2f0"
+    },
+    {
+      "offset": 359725569,
+      "length": 33438,
+      "content_range": "bytes 359725569-359759006/137205571996",
+      "sha256": "761038a599887ffac6087a353f5b178d507d370bda9d65768d9742cc41fa6927"
+    },
+    {
+      "offset": 359759007,
+      "length": 35006,
+      "content_range": "bytes 359759007-359794012/137205571996",
+      "sha256": "be917d83d0b0424a254ed3ccd276440a4c4a623bf8ee7a4e224f53c683257c4f"
+    },
+    {
+      "offset": 359846040,
+      "length": 64825,
+      "content_range": "bytes 359846040-359910864/137205571996",
+      "sha256": "a10c1593372655945c96c17904f2cd23e35ff5979ec071f89433573f67b0ed26"
+    },
+    {
+      "offset": 359910865,
+      "length": 53701,
+      "content_range": "bytes 359910865-359964565/137205571996",
+      "sha256": "f02e21c40492d1c2a0d5385028498a8c357d6728fbafc250de2994ec215aaef1"
+    },
+    {
+      "offset": 378416976,
+      "length": 14525,
+      "content_range": "bytes 378416976-378431500/137205571996",
+      "sha256": "c2e011660a5bfca0e9a1f721cf11c123e6bdf166314f24ab918a25bee37eb8fd"
+    },
+    {
+      "offset": 378320756,
+      "length": 18994,
+      "content_range": "bytes 378320756-378339749/137205571996",
+      "sha256": "80eb8a3d1498c6ce17382ff6e58b516f0ab785c9b305aec78b0a0889177b4c05"
+    },
+    {
+      "offset": 378306496,
+      "length": 14260,
+      "content_range": "bytes 378306496-378320755/137205571996",
+      "sha256": "11d9264583bbf0c9d6c3fab0330f6857dbe1612f692a4a107677ffd6fb9ac644"
+    },
+    {
+      "offset": 376991628,
+      "length": 27300,
+      "content_range": "bytes 376991628-377018927/137205571996",
+      "sha256": "089d4611497ff435a5a5b76f53bc3e7f5fdbdb8b00cf0d211e0d55be6b60e832"
+    },
+    {
+      "offset": 376971913,
+      "length": 19715,
+      "content_range": "bytes 376971913-376991627/137205571996",
+      "sha256": "8c0d9e42dc691d92f39260a48f6ef47b260d9eeef5baa9d23410736bfb8adf7d"
+    },
+    {
+      "offset": 376830008,
+      "length": 87296,
+      "content_range": "bytes 376830008-376917303/137205571996",
+      "sha256": "d05d423c3a028458347929903b460630003fbe35bbe95c2770af67ab577913e5"
+    },
+    {
+      "offset": 376748867,
+      "length": 81141,
+      "content_range": "bytes 376748867-376830007/137205571996",
+      "sha256": "b8f15820c548b366a7a0561590ec2ec9efc717347473b535f8ef71e67470956a"
+    }
+  ],
+  "scientific_boundary": "路网仅表达公开道路几何，不代表PSC项目选址、适宜性或示范优先级。"
+}
