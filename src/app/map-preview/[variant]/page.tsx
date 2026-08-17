@@ -3,6 +3,12 @@ import { YunnanMap, type YunnanMapVariant } from "@/components/charts/yunnan-map
 
 const variants = new Set(["research-atlas", "energy-corridor"]);
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return [...variants].map((variant) => ({ variant }));
+}
+
 const copy: Record<Exclude<YunnanMapVariant, "default">, { eyebrow: string; title: string; lead: string }> = {
   "research-atlas": {
     eyebrow: "地图方案 A · 科研图谱",

@@ -1,8 +1,10 @@
 import type { FeatureCollection } from "geojson";
 import type { PageSlug } from "@/lib/navigation";
+import { buildPublicProjection } from "@/lib/platform-projection";
 import type { PlatformSnapshot, ScenarioSelection } from "@/types/data";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "";
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+let runtimeSnapshotPromise: Promise<PlatformSnapshot> | null = null;
 
 function validateSnapshot(snapshot: PlatformSnapshot): void {
   if (snapshot.metadata.review_status !== "REVIEWED" || snapshot.metadata.regional_release_status !== "RELEASED") {
@@ -19,32 +21,29 @@ export async function getPlatformSnapshot(
   selection: ScenarioSelection,
   signal?: AbortSignal,
 ): Promise<PlatformSnapshot> {
-  const params = new URLSearchParams({
-    page,
-    region: selection.region,
-    year: String(selection.year),
-    technology: selection.technology,
-    scene: selection.scene,
-    scenario: selection.scenario,
-    quantile: selection.quantile,
-  });
-  const response = await fetch(`${API_BASE_URL}/api/platform/snapshot?${params.toString()}`, {
-    cache: "no-store",
-    signal,
-  });
-  if (!response.ok) {
-    const body = await response.json().catch(() => null) as { error?: string } | null;
-    throw new Error(body?.error || `数据服务读取失败：HTTP ${response.status}`);
+  runtimeSnapshotPromise ??= loadRuntimeSnapshot();
+  const source = await runtimeSnapshotPromise;
+  if (signal?.aborted) throw new DOMException("请求已取消", "AbortError");
+  const projection = buildPublicProjection(source, page, selection);
+  validateSnapshot(projection);
+  return projection;
+}
+
+async function loadRuntimeSnapshot(): Promise<PlatformSnapshot> {
+  const response = await fetch(`${BASE_PATH}/data/v4-public-runtime.json.gz`, { cache: "force-cache" });
+  if (!response.ok || !response.body) {
+    throw new Error(`公开数据包读取失败：HTTP ${response.status}`);
   }
-  const snapshot = await response.json() as PlatformSnapshot;
+  const decompressed = response.body.pipeThrough(new DecompressionStream("gzip"));
+  const snapshot = await new Response(decompressed).json() as PlatformSnapshot;
   validateSnapshot(snapshot);
   return snapshot;
 }
 
 export async function getMapAssets(): Promise<{ boundary: FeatureCollection; roads: FeatureCollection }> {
   const [boundaryResponse, roadsResponse] = await Promise.all([
-    fetch(`${API_BASE_URL}/maps/yunnan_boundary.geojson`, { cache: "force-cache" }),
-    fetch(`${API_BASE_URL}/maps/yunnan_osm_roads.geojson`, { cache: "force-cache" }),
+    fetch(`${BASE_PATH}/maps/yunnan_boundary.geojson`, { cache: "force-cache" }),
+    fetch(`${BASE_PATH}/maps/yunnan_osm_roads.geojson`, { cache: "force-cache" }),
   ]);
   if (!boundaryResponse.ok || !roadsResponse.ok) {
     throw new Error("云南离线地图资产读取失败");

@@ -316,7 +316,7 @@ export interface RegionalParameter extends Record<string, unknown> {
 
 export interface PlatformSnapshot {
   snapshotVersion: string;
-  sourceDatabaseSha256: string;
+  sourceDatabaseSha256?: string;
   metadata: Record<string, string>;
   auditCounts: Record<string, number>;
   technologies: TechnologyGeneration[];

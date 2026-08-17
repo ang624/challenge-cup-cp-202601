@@ -22,3 +22,5 @@ jobs:
       - run: npm run typecheck
       - run: npm run lint
       - run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /challenge-cup-cp-202601
